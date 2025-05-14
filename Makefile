@@ -293,9 +293,9 @@ AWK = gawk
 CC = clang
 CCAS = clang
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O2 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
+CCASFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O3 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
 CCDEPMODE = depmode=gcc3
-CFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O2 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
+CFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O3 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
 CPP = clang -E
 CPPFLAGS = 
 CUDA_CFLAGS = 
@@ -304,7 +304,7 @@ CUDA_LDFLAGS = -L/usr/local/cuda/lib
 CUDA_LIBS = -lcudart -static-libstdc++
 CXX = clang++
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O2 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
+CXXFLAGS = -march=armv8-a+crypto -mtune=cortex-a75 -O3 -ffinite-loops -ffast-math -falign-functions=16 -fomit-frame-pointer -fpic -pthread -fno-stack-protector -Rpass=loop-vectorize -mllvm -enable-loop-distribute
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
